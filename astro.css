@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&family=Rubik+Glitch&display=swap');
+
+
+
+a {
+    color: #020037;
+}
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #000820;
+ background-image: url("./img/gradient.png")
+}
+.encima {
+    background-color: transparent;
+    padding: 3px;
+    width: 100%;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  label {
+      color: yellow;
+  }
+
+  .botoes {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+  }
+
+  .intro {
+    width: 48%;
+    height: 80px;
+    font-size: 20px;
+    color: aqua;
+       font-family: 'Prompt', sans-serif;
+  }
+
+  img {
+    width: 451px;
+
+border-radius: 135px;
+padding: 30px;
+  }
+
+iframe {
+  width: 403px;
+border-radius: 45px;
+height: 382px;
+border: none;
+} 
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+section {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+
+.texto {
+  color: #0058ff;
+height: 145px;
+padding: 60px;
+font-size: 17px;
+}
+
+@keyframes move-blink {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -10000px 0;
+  }
+
+}
+
+
+.stars {
+  background: transparent url("./img/stars.png") repeat top center;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+.blink {
+  background: transparent url("./img/blink.png") top center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: -1;
+  animation: move-blink 500s linear infinite;
+}
+
